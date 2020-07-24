@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="555.0" style="-fx-background-color: #8fb382; -fx-border-color: #f0f0c0; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PemdaController">
+   <Button fx:id="Grafik1" layoutX="100.0" layoutY="191.0" mnemonicParsing="false" onAction="#goToGrafik" prefHeight="88.0" prefWidth="109.0" style="-fx-background-color: #f0f0c0; -fx-background-radius: 20;" />
+   <Button fx:id="Tabel1" layoutX="355.0" layoutY="191.0" mnemonicParsing="false" onAction="#goToTabel" prefHeight="88.0" prefWidth="122.0" style="-fx-background-color: #f0f0c0; -fx-background-radius: 20;" />
+   <ImageView fitHeight="88.0" fitWidth="91.0" layoutX="372.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Assets/icons8-bar-chart-64.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="111.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Assets/icons8-grid-2-64.png" />
+      </image>
+   </ImageView>
+    <Label fx:id="label" layoutX="91.0" layoutY="82.0" minHeight="16" minWidth="69" text="Aplikasi Pintar Bertani">
+      <font>
+         <Font name="System Bold" size="40.0" />
+      </font></Label>
+   <Button fx:id="Tabel" layoutX="91.0" layoutY="305.0" mnemonicParsing="false" onAction="#goToTabel" style="-fx-background-radius: 10;" text="Tabel Data Petani">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Button fx:id="Grafik" layoutX="321.0" layoutY="305.0" mnemonicParsing="false" onAction="#goToGrafik" style="-fx-background-radius: 10;" text="Grafik Pertumbuhan Daerah">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
+   <Button fx:id="kembali" layoutX="521.0" layoutY="29.0" mnemonicParsing="false" onAction="#goToLogin" text="Kembali" />
+   <Label fx:id="label1" layoutX="427.0" layoutY="127.0" minHeight="16" minWidth="69" text="by Eclipse">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>
